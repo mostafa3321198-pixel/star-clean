@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Clean - شركة نظافة متخصصة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        .news-bar { background: linear-gradient(90deg, #00ff0d, #9ddf04); padding: 10px 0; text-align: center; font-weight: bold; color: #333; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .marquee-container { background: linear-gradient(90deg, #0057b8, #0078d7); color: white; padding: 20px 0; overflow: hidden; position: relative; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .marquee { white-space: nowrap; display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite; font-size: 24px; font-weight: bold; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+        header { background: linear-gradient(135deg, #0057b8 0%, #0078d7 100%); color: white; padding: 20px 0; text-align: center; position: relative; }
+        .logo-container { display: flex; justify-content: center; align-items: center; margin-bottom: 15px; }
+        .logo-circle { width: 100px; height: 100px; background-color: #141353; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-left: 20px; border: 4px solid white; box-shadow: 0 0 15px rgba(0,0,0,0.2); overflow: hidden; }
+        .logo-circle img { width: 100%; height: 100%; object-fit: cover; }
+        .logo { font-size: 36px; font-weight: bold; color: #20c736; }
+        .logo span { color: white; }
+        .header-contact { margin-top: 15px; font-size: 20px; background: rgba(255, 255, 255, 0.2); display: inline-block; padding: 8px 20px; border-radius: 30px; direction: ltr; unicode-bidi: embed; }
+        .images-section { padding: 40px 0; }
+        .section-title { text-align: center; margin-bottom: 30px; color: #0057b8; font-size: 28px; position: relative; }
+        .section-title:after { content: ''; display: block; width: 80px; height: 4px; background: #2dbb02; margin: 10px auto; }
+        .image-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .image-item { height: 200px; overflow: hidden; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; }
+        .image-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+        .image-item img:hover { transform: scale(1.05); }
+        .image-placeholder, .video-placeholder { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #f0f0f0; color: #888; font-size: 16px; text-align: center; padding: 10px; }
+        .videos-section { padding: 40px 0; background-color: #f0f8ff; }
+        .video-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .video-item { height: 200px; overflow: hidden; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; }
+        .video-item iframe { width: 100%; height: 100%; border: none; }
+        .contact-buttons { position: fixed; bottom: 20px; left: 20px; z-index: 1000; }
+        .contact-btn { display: block; width: 60px; height: 60px; border-radius: 50%; margin: 10px 0; color: white; text-align: center; line-height: 60px; font-size: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: all 0.3s; }
+        .contact-btn:hover { transform: scale(1.1); }
+        .phone-btn { background-color: #25d366; }
+        .whatsapp-btn { background-color: #128c7e; }
+        @media (max-width: 992px) { .image-grid, .video-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 576px) { .image-grid, .video-grid { grid-template-columns: 1fr; } .marquee { font-size: 18px; } .header-contact { font-size: 16px; padding: 6px 12px; } .logo-circle { width: 70px; height: 70px; } .logo { font-size: 28px; } }
+    </style>
+</head>
+<body>
+    <!-- شريط الأخبار -->
+    <div class="news-bar">
+        <div class="container">عروض خاصة! خصم 25% على تنظيف الكنب والسجاد والستائر - خصم 20% على مكافحة الحشرات - استخدم كود: GOLD25</div>
+    </div>
+
+    <!-- الشريط المتحرك -->
+    <div class="marquee-container">
+        <div class="marquee"><i class="fas fa-star"></i> شركة ستار كلين شركة متخصصة في تنظيف المنازل والفلل - متخصصون في التقييم وإبادة الحشرات - تنظيف كنب سجاد نجف - نستخدم مواد مصرح بها وصديقة للبيئة - أسعار مناسبة وجودة عالية <i class="fas fa-star"></i></div>
+    </div>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <img src="https://imgur.com/IsYJX1z.jpg
+" alt="صورة من Gold Clean">
+
+                </div>
+                <div class="logo">STAR  <span>CLEAN</span></div>
+            </div>
+            <p>شركة نظافة محترفة تقدم أفضل خدمات التنظيف ومكافحة الحشرات</p>
+            <div class="header-contact"><i class="fas fa-phone"></i> 971506034812
+</div>
+        </div>
+    </header>
+
+    <!-- قسم الصور -->
+    <section class="images-section">
+        <div class="container">
+            <h2 class="section-title">معرض أعمالنا</h2>
+            <div class="image-grid">
+                <div class="image-item"><img src="https://i.imgur.com/VAXP5bG.jpg
+" alt="صورة 1 - تنظيف منازل"></div>
+                <div class="image-item"><img src="https://imgur.com/QSz6XvM.jpg" alt="صورة 2 - تنظيف كنب"></div>
+                <div class="image-item"><img src="https://imgur.com/xYKyaRe.jpg" alt="صورة 3 - تنظيف سجاد"></div>
+                <div class="image-item"><img src="https://imgur.com/ZoRhre4.jpg" alt="صورة 4 - إبادة حشرات"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الفيديوهات -->
+    <section class="videos-section">
+        <div class="container">
+            <h2 class="section-title">فيديوهاتنا</h2>
+            <div class="video-grid">
+                <div class="video-item"><iframe src="https://drive.google.com/file/d/15q-S5UPHvyJn8-5mrHAmfuhRdM27JXKL/preview" allow="autoplay" allowfullscreen></iframe></div>
+                <div class="video-item"><iframe src="https://drive.google.com/file/d/1r4hxglHXJZQWQCwHZbsTElshAoagdw_J/preview" allow="autoplay" allowfullscreen></iframe></div>
+                <div class="video-item"><iframe src="https://drive.google.com/file/d/1wV8sckCMz6pdVJWGO70Ivj7DpS-AD_Do/preview" allow="autoplay" allowfullscreen></iframe></div>
+                <div class="video-item"><iframe src="https://drive.google.com/file/d/1myx7GWCoIk19xiRdSFQmyJZiJsi0CC9o/preview" allow="autoplay" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- أزرار التواصل -->
+    <div class="contact-buttons">
+        <a href="tel:971506034812
+" class="contact-btn phone-btn"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/971506034812
+" class="contact-btn whatsapp-btn"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</body>
+</html>
